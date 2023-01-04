@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСохранитьНастройки" id="64">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СохранитьНастройки</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьНастройкиРасширеннаяПодсказка" id="65"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Настройки" id="72">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="73"/>
+			<ChildItems>
+				<UsualGroup name="Общие" id="74">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОбщиеРасширеннаяПодсказка" id="75"/>
+					<ChildItems>
+						<CheckBoxField name="РежимЗагрузки" id="9">
+							<DataPath>Объект.РежимЗагрузки</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РежимЗагрузкиКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="РежимЗагрузкиРасширеннаяПодсказка" id="11"/>
+							<Events>
+								<Event name="OnChange">РежимЗагрузкиПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="АдресИнформирования" id="12">
+							<DataPath>Объект.АдресИнформирования</DataPath>
+							<ContextMenu name="АдресИнформированияКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="АдресИнформированияРасширеннаяПодсказка" id="14"/>
+						</InputField>
+						<InputField name="АдресСервераFTP" id="15">
+							<DataPath>Объект.АдресСервераFTP</DataPath>
+							<ContextMenu name="АдресСервераFTPКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="АдресСервераFTPРасширеннаяПодсказка" id="17"/>
+						</InputField>
+						<InputField name="ПортСервераFTP" id="18">
+							<DataPath>Объект.ПортСервераFTP</DataPath>
+							<ContextMenu name="ПортСервераFTPКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ПортСервераFTPРасширеннаяПодсказка" id="20"/>
+						</InputField>
+						<InputField name="Пользователь" id="21">
+							<DataPath>Объект.Пользователь</DataPath>
+							<ContextMenu name="ПользовательКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="23"/>
+						</InputField>
+						<InputField name="Пароль" id="24">
+							<DataPath>Объект.Пароль</DataPath>
+							<ContextMenu name="ПарольКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="26"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Выгрузка" id="76">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ВыгрузкаРасширеннаяПодсказка" id="77"/>
+					<ChildItems>
+						<InputField name="ДатаПоследнейУдачнойВыгрузки" id="27">
+							<DataPath>Объект.ДатаПоследнейУдачнойВыгрузки</DataPath>
+							<ContextMenu name="ДатаПоследнейУдачнойВыгрузкиКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ДатаПоследнейУдачнойВыгрузкиРасширеннаяПодсказка" id="29"/>
+						</InputField>
+						<InputField name="КаталогВыгрузкиЦенКонкурентов" id="30">
+							<DataPath>Объект.КаталогВыгрузкиЦенКонкурентов</DataPath>
+							<ContextMenu name="КаталогВыгрузкиЦенКонкурентовКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="КаталогВыгрузкиЦенКонкурентовРасширеннаяПодсказка" id="32"/>
+						</InputField>
+						<InputField name="КаталогВыгрузкиПродаж" id="33">
+							<DataPath>Объект.КаталогВыгрузкиПродаж</DataPath>
+							<ContextMenu name="КаталогВыгрузкиПродажКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="КаталогВыгрузкиПродажРасширеннаяПодсказка" id="35"/>
+						</InputField>
+						<InputField name="КаталогВыгрузкиАссортимента" id="36">
+							<DataPath>Объект.КаталогВыгрузкиАссортимента</DataPath>
+							<ContextMenu name="КаталогВыгрузкиАссортиментаКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="КаталогВыгрузкиАссортиментаРасширеннаяПодсказка" id="38"/>
+						</InputField>
+						<Table name="ГруппыИсключенияДляОпределенияОпта" id="39">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ГруппыИсключенияДляОпределенияОпта</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ГруппыИсключенияДляОпределенияОптаКонтекстноеМеню" id="40"/>
+							<AutoCommandBar name="ГруппыИсключенияДляОпределенияОптаКоманднаяПанель" id="41"/>
+							<ExtendedTooltip name="ГруппыИсключенияДляОпределенияОптаРасширеннаяПодсказка" id="42"/>
+							<SearchStringAddition name="ГруппыИсключенияДляОпределенияОптаСтрокаПоиска" id="43">
+								<AdditionSource>
+									<Item>ГруппыИсключенияДляОпределенияОпта</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ГруппыИсключенияДляОпределенияОптаСтрокаПоискаКонтекстноеМеню" id="44"/>
+								<ExtendedTooltip name="ГруппыИсключенияДляОпределенияОптаСтрокаПоискаРасширеннаяПодсказка" id="45"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ГруппыИсключенияДляОпределенияОптаСостояниеПросмотра" id="46">
+								<AdditionSource>
+									<Item>ГруппыИсключенияДляОпределенияОпта</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ГруппыИсключенияДляОпределенияОптаСостояниеПросмотраКонтекстноеМеню" id="47"/>
+								<ExtendedTooltip name="ГруппыИсключенияДляОпределенияОптаСостояниеПросмотраРасширеннаяПодсказка" id="48"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ГруппыИсключенияДляОпределенияОптаУправлениеПоиском" id="49">
+								<AdditionSource>
+									<Item>ГруппыИсключенияДляОпределенияОпта</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ГруппыИсключенияДляОпределенияОптаУправлениеПоискомКонтекстноеМеню" id="50"/>
+								<ExtendedTooltip name="ГруппыИсключенияДляОпределенияОптаУправлениеПоискомРасширеннаяПодсказка" id="51"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ГруппыИсключенияДляОпределенияОптаНомерСтроки" id="52">
+									<DataPath>Объект.ГруппыИсключенияДляОпределенияОпта.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ГруппыИсключенияДляОпределенияОптаНомерСтрокиКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ГруппыИсключенияДляОпределенияОптаНомерСтрокиРасширеннаяПодсказка" id="54"/>
+								</LabelField>
+								<InputField name="ГруппыИсключенияДляОпределенияОптаНоменклатура" id="55">
+									<DataPath>Объект.ГруппыИсключенияДляОпределенияОпта.Номенклатура</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ГруппыИсключенияДляОпределенияОптаНоменклатураКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ГруппыИсключенияДляОпределенияОптаНоменклатураРасширеннаяПодсказка" id="57"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Загрузка" id="78">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗагрузкаРасширеннаяПодсказка" id="79"/>
+					<ChildItems>
+						<InputField name="КаталогЗагрузкиПрайсов" id="58">
+							<DataPath>Объект.КаталогЗагрузкиПрайсов</DataPath>
+							<ContextMenu name="КаталогЗагрузкиПрайсовКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="КаталогЗагрузкиПрайсовРасширеннаяПодсказка" id="60"/>
+						</InputField>
+						<InputField name="КаталогАрхивации" id="61">
+							<DataPath>Объект.КаталогАрхивации</DataPath>
+							<ContextMenu name="КаталогАрхивацииКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="КаталогАрхивацииРасширеннаяПодсказка" id="63"/>
+						</InputField>
+						<InputField name="ФирмаДляПереоценок" id="80">
+							<DataPath>Объект.ФирмаДляПереоценок</DataPath>
+							<ContextMenu name="ФирмаДляПереоценокКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ФирмаДляПереоценокРасширеннаяПодсказка" id="82"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ОбменSmartPricing</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПараметрыОбработкиСтрокой" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры обработки строкой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьНастройки</Action>
+		</Command>
+	</Commands>
+</Form>
